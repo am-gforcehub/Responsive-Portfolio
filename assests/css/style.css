@@ -4,15 +4,16 @@ body  {
     font-family:  Arial, Helvetica, sans-serif;
     font-size: 16px;
     color: #777777;
+    max-width: 1024px;
 }
 
-.wrapper {
+#wrapper {
 
     max-width: 1024px;
   
 }
 
-#container {
+.container {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -185,42 +186,117 @@ footer {
     font-size: 12px;
 
 }
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 640px) {
-  .Box-1, .Box-2, .Box-3  {
-        width: 600px;
-        
+/* Media Queries */
+@media screen and (max-width: 640px) {
+    h1, nav, h2, img, .Box-1, .Box-2, .Box-3, .portfolioimg, .textimg {
+        width: 400px;
+        margin: 0 auto;   
     
     }
-    #container {
-        position: static;
+    .container {
+        width: 350px;
+        position: sticky;
+        float: left;
+        margin-bottom: 50px;
+        margin-left: 145px;
+        margin-top: 30px;
+    }
 
+    .Box-2, .Box-3 {
+        margin-bottom: 50px;
+        float: none;
+    }
 
+    h1 {
+        width: 310px;
+    }
+
+    .Box-3 {
+        float: none;
+
+    }
+
+    h2 {
+        margin-left: -10px;
+    }
+    footer {
+        display: none;
     }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 768px) {
 
-    .Box-1, .Box-2, .Box-3  {
-        width: 600px;
+@media screen and (max-width: 768px) {
+
+    h1, nav, h2, img, .Box-1, .Box-2, .Box-3, .portfolioimg, .textimg {
+        width: 400px;
+        margin: 0 auto;   
+    
     }
-    #container {
-        position: static;
-        width: 30%;
+    .container {
+        width: 350px;
+        position: sticky;
+        float: left;
+        margin-bottom: 50px;
+        margin-left: 145px;
+        margin-top: 30px;
     }
-}
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 980px) {
-    .Box-1, .Box-2, .Box-3 {
-        width: 80%;
-        display: inline-block;
+    .Box-2, .Box-3 {
+        margin-bottom: 50px;
+        float: none;
+    }
 
-}
-#container {
-    position: static;
-    display: inline-block;
+    h1 {
+        width: 310px;
+    }
 
-}
+    .Box-3 {
+        float: none;
+    }
+
+    h2 {
+        margin-left: -10px;
+    }
+    footer {
+        display: none;
+    }
+
+    }
+ 
+@media screen and (max-width: 980px) {
+    
+    h1, nav, h2, img, .Box-1, .Box-2, .Box-3, .portfolioimg, .textimg {
+        width: 400px;
+        margin: 0 auto;   
+    
+    }
+    .container {
+        width: 350px;
+        position: sticky;
+        float: left;
+        margin-bottom: 50px;
+        margin-left: 145px;
+        margin-top: 30px;
+    }
+
+    .Box-2, .Box-3 {
+        margin-bottom: 50px;
+        float: none;
+    }
+
+    h1 {
+        width: 310px;
+    }
+
+    .Box-3 {
+        float: none;
+    }
+
+    h2 {
+        margin-left: -10px;
+    }
+    footer {
+        display: none;
+    }
+
 } 
